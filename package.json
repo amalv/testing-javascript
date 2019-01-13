@@ -4,11 +4,10 @@
   "description": "Testing javascript examples",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html",
     "lint": "eslint src/static-testing-tools",
-    "prettier": "prettier --write \"**/*.+(js|json|yml|css|md)\"",
-    "validate": "yarn lint && prettier --list-different \"**/*.+(js|json|yml|css|md)\""
+    "prettier": "prettier \"**/*.+(js|json|yml|css|md)\"",
+    "format": "yarn prettier --write",
+    "validate": "yarn lint && yarn prettier --list-different"
   },
   "license": "MIT",
   "dependencies": {},
