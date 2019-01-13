@@ -1,14 +1,18 @@
 {
-  "name": "parcel-sandbox",
+  "name": "testing-javascript",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description": "Testing javascript examples",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "lint": "eslint src/static-testing-tools",
+    "format": "prettier --write \"**/*.+(js|json|yml|css|md)\""
   },
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.6.1"
+    "eslint": "^5.12.0",
+    "prettier": "^1.15.3"
   }
 }
