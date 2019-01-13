@@ -7,12 +7,14 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
     "lint": "eslint src/static-testing-tools",
-    "format": "prettier --write \"**/*.+(js|json|yml|css|md)\""
+    "prettier": "prettier --write \"**/*.+(js|json|yml|css|md)\"",
+    "validate": "yarn lint && prettier --list-different \"**/*.+(js|json|yml|css|md)\""
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^5.12.0",
+    "eslint-config-prettier": "^3.3.0",
     "prettier": "^1.15.3"
   }
 }
